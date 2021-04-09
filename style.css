@@ -24,7 +24,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: #531c1c url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -410,7 +410,7 @@ a:hover {
 /* ----------------- FIN Media ----------------- */
 .nav > li > .dropdown a {
     background: none!important;
-    display: block;
+    /* display: block; */
     padding: 14px 15px;
 }
 
@@ -678,7 +678,7 @@ a {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
@@ -687,7 +687,7 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -699,14 +699,14 @@ p {
     margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
+    padding: 12px 28px;
     font-size: 16px;
     font-weight: 700;
 }
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h1 {
@@ -723,7 +723,7 @@ h3 {
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
@@ -746,6 +746,7 @@ h4 {
 }
 
 .portfolio-thumb {
+    display: initial;
     margin-bottom: 24px;
 }
 
@@ -828,7 +829,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -847,10 +848,10 @@ h4 {
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 80%;
     }
     .nav-center.navbar .nav {
-        max-width: 100%
+        max-width: 100%;
     }
 }
 
