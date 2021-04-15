@@ -407,6 +407,10 @@ a:hover {
         float: none;
         margin: 10px auto 0;
     }
+    .adresse{
+        display: block;
+        justify-content: center;
+    }
 }
 /* ----------------- FIN Media ----------------- */
 .nav > li > .dropdown a {
@@ -663,6 +667,14 @@ a {
     color: #575757!important;
 }
 
+.adresse{
+    font-family: "helvetica";
+    font-weight: 400;
+    color: #575757!important;
+    text-align: center;
+    font-size: 17px;
+}
+
 .container {
     max-width: 1000px;
 }
@@ -688,7 +700,7 @@ a {
 }
 
 p {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -795,7 +807,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #be7959;
     color: #FFFFFF!important;
 }
 
