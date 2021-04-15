@@ -665,6 +665,7 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+    font-size: 15px;
 }
 
 .adresse{
@@ -700,7 +701,7 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -799,7 +800,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #be7959;
+    background-color: #934724;
 }
 
 .tc-white {
@@ -807,7 +808,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #be7959;
+    background: #934724;
     color: #FFFFFF!important;
 }
 
