@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="scss/panier.css" />
+    <title>Orinoco - Panier</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><p>Orinoco</p></a>
+      </div>
+      <div class="menu">
+        <a href="panier.html">
+          <p>Panier</p>
+          <i class="fas fa-cart-arrow-down"></i>
+        </a>
+        <div class="item__number"></div>
+      </div>
+    </header>
+    <!--Produits-->
+
+    <div class="heading cf">
+      <h1>Ma Carte</h1>
+      <a href="./index.html" class="continue">Continuer achat</a>
+    </div>
+    <div class="cart">
+      <ul class="tableHead">
+        <li class="prodHeader">Produit</li>
+        <li>Quantité</li>
+        <li>Total</li>
+        <li>Supprimer</li>
+      </ul>
+    </div>
+    <div id="container-produit-panier" class="wrap cf"></div>
+    <footer>
+      <a href="index.html"><p>Mentions légales</p></a>
+      <a href="mailto:orinocomeuble@chêne.com"><p>Contactez-nous</p></a>
+    </footer>
+
+    <script src="JS/panier.js"></script>
+  </body>
+</html>
