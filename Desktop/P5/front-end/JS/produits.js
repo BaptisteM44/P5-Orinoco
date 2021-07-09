@@ -61,9 +61,8 @@ fetch(`http://localhost:3000/api/furniture/${productId}`)
       };
       console.log(produitSelection);
 
-      let itemStorage = JSON.parse(localStorage.getItem("produit"));
       //JSON.parse convertir les données au format JSON en objet JS
-      console.log(itemStorage);
+      let itemStorage = JSON.parse(localStorage.getItem("produit"));
 
       //fonction fenêtre popup
       const popupConfirmation = () => {
@@ -83,23 +82,28 @@ fetch(`http://localhost:3000/api/furniture/${productId}`)
         //transformation en JSON et envoi dans la key "produit" du localStorage
         localStorage.setItem("produit", JSON.stringify(itemStorage));
       };
-      //s'il y a deja des produits dans le LocalStorage
-      if (itemStorage) {
-        ajoutProduitLocalStorage();
-        popupConfirmation();
+      // vérifie s'il est déja présent
+      // si oui, dejaPresent en true et sauvegarde sa place dans le localStorage
+      let isAlreadyPresent = false;
+      let indexModification;
+      for (products of itemStorage) {
+        switch (products.name) {
+          case produitSelection.name:
+            isAlreadyPresent = true;
+            indexModification = itemStorage.indexOf(products);
+        }
       }
-      //s'il n'y a pas de produits dans le LocalStorage
-      else {
-        itemStorage = [];
+
+      // si déjaPresent incrémente seulement la quantité
+      if (isAlreadyPresent) {
+        itemStorage[indexModification].quantity =
+          +itemStorage[indexModification].quantity + +produitSelection.quantity;
+        localStorage.setItem("produit", JSON.stringify(itemStorage));
+        popupConfirmation();
+        // si non, ajoute le produit au localStorage
+      } else {
         ajoutProduitLocalStorage();
         popupConfirmation();
-
-        itemStorage.forEach((prod) => {
-          if (response._id === prod._id) {
-            prod.quantity++;
-          }
-          console.log(quantity);
-        });
       }
     });
   });

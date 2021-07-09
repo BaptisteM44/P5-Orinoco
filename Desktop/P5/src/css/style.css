@@ -89,7 +89,7 @@ footer a {
 
 .title {
   position: relative;
-  background-image: url("/images/Toolbox.jpg");
+  background-image: url("/front-end/images/Toolbox.jpg");
   width: 100%;
   height: 300px;
   margin: 0px auto;
@@ -103,7 +103,7 @@ footer a {
 }
 
 .main {
-  max-width: 960px;
+  max-width: 980px;
   margin: auto;
 }
 
@@ -119,6 +119,7 @@ h1 {
   border: black 1px solid;
   padding: 2rem;
   margin-bottom: 1rem;
+  text-align: -webkit-center;
 }
 
 .produit .produit-title {
@@ -151,6 +152,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px;
 }
 
 #position-produit {
@@ -181,4 +183,39 @@ h1 {
 
 #btn-envoyer {
   margin: 20px auto;
+}
+
+#produit-id {
+  text-decoration: none;
+  letter-spacing: -0.015em;
+  font-size: 0.75em;
+  padding: 1em;
+  color: #fff;
+  background: #f0bc68;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: right;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.container-commande {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.container-commande h2 {
+  font-size: 34px;
+}
+
+.container-commande .recapCommande .txt {
+  font-size: 24px;
+  margin: 20px 0px;
+}
+
+.container-commande .recapCommande span {
+  color: #c4d7d1;
+  font-weight: bold;
+  font-size: 30px;
 }

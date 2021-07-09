@@ -39,7 +39,11 @@ img {
 .wrap {
   width: 75%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 20px auto;
+  p {
+    font-weight: bold;
+    font-size: 35px;
+  }
   .cartWrap {
     display: flex;
   }
@@ -192,6 +196,7 @@ a.remove {
 .btn {
   &:link,
   &:visited {
+    margin-bottom: 15px;
     text-decoration: none;
     letter-spacing: -0.015em;
     font-size: 1em;
